@@ -1,0 +1,31 @@
+{
+  "name": "@fast-tool/preconnect-auto-insert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/preconnect.cjs.js",
+  "module": "lib/preconnect.esm.js",
+  "types": "lib/src/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "exports": {
+    "types": "./lib/src/index.d.ts",
+    "import": "./lib/preconnect.esm.js",
+    "default": "./lib/preconnect.cjs.js"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/webpack": "^5.28.5",
+    "webpack": "^5.93.0"
+  }
+}

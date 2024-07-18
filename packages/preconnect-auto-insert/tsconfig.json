@@ -1,0 +1,26 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "composite": true,
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": false,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "sourceMap": false,
+        "baseUrl": ".",
+        "outDir": "./lib",           // tsc构建输出目录
+        "declaration": true,
+        "lib": ["esnext", "scripthost"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.vue", "utils/**/*.ts", "__test__/**/*.spec.ts"],
+    "exclude": ["node_modules", "lib"]
+}
