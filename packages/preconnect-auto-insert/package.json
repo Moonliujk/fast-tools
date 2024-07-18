@@ -1,7 +1,7 @@
 {
   "name": "@fast-tools/preconnect-auto-insert",
   "version": "1.0.0",
-  "description": "A webpack plugin for inserting preconnect and dns-connect tags automatically",
+  "description": "A webpack plugin for inserting preconnect and dns-prefetch link tags automatically",
   "main": "lib/preconnect.cjs.js",
   "module": "lib/preconnect.esm.js",
   "types": "lib/src/index.d.ts",
@@ -11,13 +11,15 @@
     "test": "vitest"
   },
   "keywords": [
-    "webpack plugin",
+    "webpack 5 plugin",
     "preconnect",
-    "dns-connect"
+    "dns-prefetch",
+    "FP",
+    "website optimize"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoderMonkie/data-struct-js.git"
+    "url": "git+https://github.com/Moonliujk/fast-tools.git"
   },
   "author": "Leslie <https://github.com/Moonliujk>",
   "license": "MIT",
@@ -43,5 +45,8 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/webpack": "^5.28.5",
     "webpack": "^5.93.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

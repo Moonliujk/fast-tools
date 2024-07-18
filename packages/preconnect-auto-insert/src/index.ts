@@ -60,7 +60,7 @@ export class PreconnectTools {
     const linkTags = domains.reduce((acc, cur) => {
       return (
         acc +
-        `<link rel="dns-prefetch" href="${cur}"/><link rel="preconnect" href="${cur}"/>`
+        `<link rel="preconnect" href="${cur}"><link rel="dns-prefetch" href="${cur}">`
       );
     }, '');
     head?.insertAdjacentHTML('afterbegin', linkTags);
