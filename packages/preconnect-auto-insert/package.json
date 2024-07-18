@@ -1,12 +1,13 @@
 {
-  "name": "@fast-tool/preconnect-auto-insert",
+  "name": "@fast-tools/preconnect-auto-insert",
   "version": "1.0.0",
   "description": "A webpack plugin for inserting preconnect and dns-connect tags automatically",
   "main": "lib/preconnect.cjs.js",
   "module": "lib/preconnect.esm.js",
   "types": "lib/src/index.d.ts",
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build:clean": "rm -rf ./lib",
+    "build:lib": "pnpm build:clean && rollup -c rollup.config.js",
     "test": "vitest"
   },
   "keywords": [

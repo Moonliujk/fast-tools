@@ -6,7 +6,11 @@
   "scripts": {
     "lint": "eslint ./ --ext .js,.ts,.vue  --fix",
     "format": "prettier --config .prettierrc.js '.' --write",
-    "test": "vitest"
+    "test": "vitest",
+    "update:version": "pnpm changeset && pnpm changeset version",
+    "build:lib": "pnpm -r --parallel build:lib",
+    "build:prepublish": "pnpm update:version && pnpm build:lib",
+    "build:publish": "pnpm publish -r --no-git-checks"
   },
   "keywords": [
     "webpack plugin",
