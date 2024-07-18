@@ -10,8 +10,8 @@ type PreconnectOptions = {
 export class PreconnectTools {
   customDomains: string[];
   ignoreDomains: string[];
-  constructor(options: PreconnectOptions) {
-    const { customDomains = [], ignoreDomains = [] } = options;
+  constructor(options?: PreconnectOptions) {
+    const { customDomains = [], ignoreDomains = [] } = options || {};
     this.customDomains =
       typeof customDomains === 'string' ? [customDomains] : customDomains;
     this.ignoreDomains =
