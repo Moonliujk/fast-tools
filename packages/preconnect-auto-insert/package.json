@@ -1,7 +1,7 @@
 {
   "name": "@fast-tool/preconnect-auto-insert",
   "version": "1.0.0",
-  "description": "",
+  "description": "A webpack plugin for inserting preconnect and dns-connect tags automatically",
   "main": "lib/preconnect.cjs.js",
   "module": "lib/preconnect.esm.js",
   "types": "lib/src/index.d.ts",
@@ -9,9 +9,17 @@
     "build": "rollup -c rollup.config.js",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "webpack plugin",
+    "preconnect",
+    "dns-connect"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderMonkie/data-struct-js.git"
+  },
+  "author": "Leslie <https://github.com/Moonliujk>",
+  "license": "MIT",
   "engines": {
     "node": ">=10.13.0"
   },
@@ -19,6 +27,13 @@
     "types": "./lib/src/index.d.ts",
     "import": "./lib/preconnect.esm.js",
     "default": "./lib/preconnect.cjs.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Moonliujk/fast-tools/issues"
+  },
+  "homepage": "https://github.com/Moonliujk/fast-tools",
+  "peerDependencies": {
+    "webpack": "^5"
   },
   "dependencies": {
     "node-html-parser": "^6.1.13"

@@ -3,9 +3,6 @@ import { Compilation, Compiler } from 'webpack';
 import { generateDomains } from '../utils/utils';
 
 type PreconnectOptions = {
-  /**
-   * @type
-   */
   customDomains?: string[] | string;
   ignoreDomains?: string[] | string;
 };
@@ -51,7 +48,7 @@ export class PreconnectTools {
     );
   }
 
-  // inset link tags into the head tag
+  // insert link tags into the head tag
   generateRoot(html: string) {
     const root = parse(html);
     const head = root.querySelector('head');
