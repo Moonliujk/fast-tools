@@ -1,5 +1,11 @@
 # @fast-tool/preconnect-auto-insert
 
+## 1.0.1
+
+### Patch Changes
+
+- add readme & change option param to be an optional param
+
 ## 1.0.0
 
 ### Major Changes

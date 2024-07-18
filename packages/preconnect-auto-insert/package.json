@@ -1,6 +1,6 @@
 {
   "name": "@fast-tools/preconnect-auto-insert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack plugin for inserting preconnect and dns-prefetch link tags automatically",
   "main": "lib/preconnect.cjs.js",
   "module": "lib/preconnect.esm.js",
